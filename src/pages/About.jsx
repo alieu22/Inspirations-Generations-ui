@@ -20,11 +20,11 @@ function About() {
           </div>
 
           <div className="col-12 col-md-6 col-lg-6 mt-5 text-center">
-            <h4>
+            <h4 className="text-center">
               We are commited to providing a safe, supportive, and nurturing
               environment for seniors and adults who need personalized care. Our
               mission is to offer a home-like atomosphere where residents can
-              thrive, feel valued, and receieve the attention that they deserve
+              thrive, feel valued, and receieve the attention that they deserve.
             </h4>
           </div>
         </div>
@@ -33,7 +33,7 @@ function About() {
       <div className="container spacing">
         <div className="row mt-5 ">
           <div className="col-12 col-md-6 col-lg-6 mt-5">
-            <h4>
+            <h4 className="text-center">
               Inspirations Generations embodies our commitment to honoring the
               lives and legacies of those we care for. At our adult family home,
               we believe that every generation has something valuable to offer,
@@ -60,7 +60,7 @@ function About() {
             <img className="img-fluid founder-img" src="src/assets/images/founder.jpeg" />
           </div>
 
-          <div className="col-12 col-md-6 col-lg-6 ">
+          <div className="col-12 col-md-6 col-lg-6">
             <h1 className="mt-3 ">Isatou Darboe</h1>
             <h2 className="mt-3">Isatoudarboe@gmail.com</h2>
             <h3 className="mt-3"><a>https://www.testlink.com</a></h3>
