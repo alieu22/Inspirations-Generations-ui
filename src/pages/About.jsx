@@ -16,7 +16,7 @@ function About() {
       <div className="container">
         <div className="row mt-5">
           <div className="col-12 col-md-6 col-lg-6">
-            <img className="img-fluid" src="src/assets/images/dark.jpg" />
+            <img className="img-fluid" src="src/assets/images/wheelchair1-img.jpeg" />
           </div>
 
           <div className="col-12 col-md-6 col-lg-6 mt-5 text-center">
@@ -50,12 +50,12 @@ function About() {
         </div>
       </div>
 
-      <div className="container-fluid spacing">
-        <div className="row mt-5 founder-bg-color">
+      <div className="container-fluid spacing founder-bg-color">
+        <div className="row mt-5 ">
           <h1 className="text-center">Our Founder</h1>
         </div>
 
-        <div className="row founder-bg-color">
+        <div className="row ">
           <div className="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
             <img className="img-fluid founder-img" src="src/assets/images/founder.jpeg" />
           </div>
@@ -68,7 +68,7 @@ function About() {
           </div>
         </div>
       
-      <div className="row founder-bg-color">
+      <div className="row ">
       <h3 className="mt-5">
             Isatou Darboe, the founder of inspiration Generations, is passionate about creating a compassionate 
             and nurturing environment for seniors and adults in need of personalized care. With a background 

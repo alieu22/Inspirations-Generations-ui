@@ -32,15 +32,15 @@ function Home() {
 
             <div className="row mt-5 text-center">
                 <div className="col-12 col-md-4 col-lg-4 mb-5">
-                   <img class="img-fluid" src="src/assets/images/dark2.jpeg"/>
+                   <img class="img-fluid" src="src/assets/images/wheelchair1-img.jpeg"/>
                 </div>
 
                 <div className="col-12 col-md-4 col-lg-4 mb-5">
-                   <img class="img-fluid" src="src/assets/images/dark2.jpeg"/>
+                   <img class="img-fluid" src="src/assets/images/wheelchair2-img.jpeg"/>
                 </div>
 
                 <div className="col-12 col-md-4 col-lg-4">
-                   <img class="img-fluid" src="src/assets/images/dark2.jpeg"/>
+                   <img class="img-fluid" src="src/assets/images/medicineimg.jpeg"/>
                 </div>
             </div>
         </div>

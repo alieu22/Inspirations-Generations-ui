@@ -14,7 +14,7 @@ function Services() {
 
         <div className="row mt-5">
           <div className="col-12 col-md-6 col-lg-6">
-            <img className="img-fluid" src="src/assets/images/dark.jpg" />
+            <img className="img-fluid" src="src/assets/images/medicineimg.jpeg" />
           </div>
 
           <div className="col-12 col-md-6 col-lg-6 mt-5">
@@ -71,7 +71,7 @@ function Services() {
           </div>
 
           <div className="col-12 col-md-6 col-lg-6">
-            <img className="img-fluid" src="src/assets/images/dark.jpg" />
+            <img className="img-fluid" src="src/assets/images/wheelchair4-img.jpeg" />
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ function Services() {
 
         <div className="row mt-5">
           <div className="col-12 col-md-6 col-lg-6">
-            <img class="img-fluid" src="src/assets/images/dark.jpg" />
+            <img class="img-fluid" src="src/assets/images/house-img.jpeg" />
           </div>
 
           <div className="col-12 col-md-6 col-lg-6 mt-5">
@@ -108,15 +108,15 @@ function Services() {
 
         <div className="row text-center">
             <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid" src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid" src="src/assets/images/house-img.jpeg"/>
             </div>
 
             <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid"  src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid"  src="src/assets/images/house-img.jpeg"/>
             </div>
 
             <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid"  src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid"  src="src/assets/images/house-img.jpeg"/>
             </div>
 
             
@@ -124,15 +124,15 @@ function Services() {
 
         <div className="row mt-3 text-center">
         <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid"  src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid"  src="src/assets/images/house-img.jpeg"/>
             </div>
 
             <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid"  src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid"  src="src/assets/images/house-img.jpeg"/>
             </div>
 
             <div className="col-12 col-md-4 col-lg-4 mb-5">
-                <img className="img-fluid"  src="src/assets/images/dark2.jpeg"/>
+                <img className="img-fluid"  src="src/assets/images/house-img.jpeg"/>
             </div>
         </div>
       </div>

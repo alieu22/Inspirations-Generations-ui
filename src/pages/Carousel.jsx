@@ -45,40 +45,33 @@ const Carousel = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="src/assets/images/dark.jpg"
+            src="src/assets/images/elder-game.jpeg"
             className="d-block w-100"
             alt="Wild Landscape"
           />
           <div className="carousel-caption d-none d-md-block">
-            <h2>Providing clients with the best experience!</h2>
+            <h2>Inspirations Generations</h2>
             <h3 className="text-warning">
-              Where Comfort, Care, and Community Flourish
+              Providing clients with the best experience!
             </h3>
+            <h4>Where Comfort, Care, and Community Flourish.</h4>
           </div>
         </div>
         <div className="carousel-item">
           <img
-            src="src/assets/images/dark2.jpeg"
+            src="src/assets/images/joy-img.jpeg"
             className="d-block w-100"
             alt="Camera"
           />
-          <div className="carousel-caption d-none d-md-block">
-            <h2>Featuring the Best for our clients</h2>
-            <h3 className="text-warning">Reliable. Available. Believable.</h3>
-          </div>
+          
         </div>
         <div className="carousel-item">
           <img
-            src="src/assets/images/dark2.jpeg"
+            src="src/assets/images/help-img.jpeg"
             className="d-block w-100"
             alt="Exotic Fruits"
           />
-          <div className="carousel-caption d-none d-md-block">
-            <h2>Providing clients with the best experience!</h2>
-            <h3 className="text-warning">
-              Where Comfort, Care, and Community Flourish
-            </h3>
-          </div>
+          
         </div>
       </div>
       <button
