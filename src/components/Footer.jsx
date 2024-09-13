@@ -1,9 +1,125 @@
-function Footer() {
-    return (
-        <>
-        <h1> <h1>------------------------------------This will be the Footer -------------------------------</h1></h1>
-        </>
-    )
-}
+import { NavLink } from "react-router-dom";
+
+//import { FaHome, FaPhone, FaEnvelope } from "react-icons/fa";
+
+
+
+const Footer = () => {
+
+  const pages = ["Home", "About", "Locations", "Contact"];
+
+
+
+  return (
+
+    <footer
+
+      className="text-center text-lg-start text-muted bg-primary"
+
+    >
+
+      <section className="pt-2 text-white">
+
+        <div className="container text-center text-md-start">
+
+          <div className="row mt-5">
+
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+              <h6 className="text-uppercase fw-bold mb-4">
+
+                <i className="me-3"></i>inspiration Generations 
+
+              </h6>
+
+            </div>
+
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+
+
+
+              {pages.map((page) => (
+
+                <p key={page}>
+
+                  <NavLink
+
+                    className={({ isActive }) =>
+
+                      isActive
+
+                        ? "nav-link footer-link footer-link-active"
+
+                        : "nav-link text-reset"
+
+                    }
+
+                    to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
+
+                  >
+
+                    {page}
+
+                  </NavLink>
+
+                </p>
+
+              ))}
+
+              <p>
+
+                <NavLink
+
+                  className={({ isActive }) =>
+
+                    isActive
+
+                      ? "nav-link text-warning-700 bg-warning footer-link footer-link-active"
+
+                      : "nav-link text-reset"
+
+                  }
+
+                  to="/login"
+
+                >
+
+                  Login
+
+                </NavLink>
+
+              </p>
+
+            </div>
+
+            
+          </div>
+
+        </div>
+
+      </section>
+
+      <div className="text-center p-4 footerCopyright text-white">
+
+        &copy; {new Date().getFullYear()} Copyright:{" "}
+
+        <a className="text-reset fw-bold" href="https://mindsightmentors.org">
+
+          MCG
+
+        </a>
+
+      </div>
+
+    </footer>
+
+  );
+
+};
+
+
 
 export default Footer;
+
