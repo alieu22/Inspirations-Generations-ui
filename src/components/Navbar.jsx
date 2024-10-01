@@ -1,25 +1,37 @@
+import { Link, NavLink } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function NavBar() {
-    return (
-        <>
-      <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Services</a>
-        <a class="nav-link" href="#">Contact</a> 
-      
+  const pages = ['Home', 'About', 'Services', 'Contact'];
+
+  return (
+    <nav className="navbar navbar-expand-lg bg-primary text-white">
+      <div className="container-fluid d-flex justify-content-between">
+        <div>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <Link className="navbar-brand" to="/">Inspirations Generations</Link>
+        </div>
+
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {pages.map((page) => (
+              <li className="nav-item" key={page}>
+                <NavLink 
+                  className={({ isActive }) => isActive ? "nav-link p-2 footer-link footer-link-active" : "nav-link text-white"} 
+                  to={page === 'Home' ? '/' : `/${page.toLowerCase()}`}>
+                  {page}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+         
+        </div>
+
       </div>
-    </div>
-  </div>
-</nav>
-        </>
-    )
+    </nav>
+  );
 }
 
 export default NavBar;

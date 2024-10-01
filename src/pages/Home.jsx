@@ -43,6 +43,10 @@ function Home() {
                    <img class="img-fluid" src="src/assets/images/medicineimg.jpeg"/>
                 </div>
             </div>
+
+            <div className="row mb-5">
+
+            </div>
         </div>
 
 <Footer/>
