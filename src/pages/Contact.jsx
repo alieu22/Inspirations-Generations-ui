@@ -1,7 +1,11 @@
 import { useState } from "react";
 import NavBar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faEnvelope,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import TextOverlay from "../utils/TextOverlay";
 
@@ -31,25 +35,46 @@ function Contact() {
     console.log("Form Data:", formState);
     axios
       .post("http://localhost:8080/public/contact/create", formState)
-      .then(() => navigate("/thankyoupage")) 
+      .then(() => navigate("/thankyoupage"))
       .catch((err) => console.log(err));
   };
 
   return (
     <>
       <NavBar />
-      <TextOverlay text="Contact Us" image="src/assets/images/care.png" color={{ color: "white" }} />
-      <div className="contact">
+      <TextOverlay
+        text="Contact Us"
+        image="src/assets/images/care.png"
+        color={{ color: "white" }}
+      />
+
+      <div className="contact" style={{ overflowX: "hidden" }}>
+        {" "}
+        {/* Prevent horizontal overflow */}
         <div className="container">
-          <div className="row mb-2">
-          </div>
-          <div className="row justify-content-center">
-            
+          <div className="row mb-2"></div>
+
+          <div className="row justify-content-start mb-5">
+            {" "}
+            {/* Left justify and added bottom space */}
             <div className="col-12 col-md-10">
-              <div className="contact-container p-4" style={{ border: "1px solid #ddd", borderRadius: "10px", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+              <div
+                className="contact-container p-4"
+                style={{
+                  border: "1px solid #ddd",
+                  borderRadius: "10px",
+                  display: "flex",
+                  flexWrap: "wrap", // Ensure items wrap properly on smaller screens
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  maxWidth: "100%", // Ensure it fits within the container
+                }}
+              >
                 <div className="col-12 col-lg-7">
-            
-                <p className="text-center text-muted">Fill out the following form and we will be in contact with you as soon as possible</p>
+                  <p className="text-left text-muted">
+                    Fill out the following form and we will be in contact with
+                    you as soon as possible
+                  </p>
                   <form onSubmit={handleSubmit}>
                     <div className="form-group text-dark m-2">
                       <label htmlFor="exampleInputName">Enter your name</label>
@@ -63,7 +88,9 @@ function Contact() {
                       />
                     </div>
                     <div className="form-group text-dark m-2">
-                      <label htmlFor="exampleInputEmail1">Enter your Email address</label>
+                      <label htmlFor="exampleInputEmail1">
+                        Enter your Email address
+                      </label>
                       <input
                         type="email"
                         className="form-control"
@@ -74,7 +101,9 @@ function Contact() {
                       />
                     </div>
                     <div className="form-group text-dark m-2">
-                      <label htmlFor="exampleInputPhone">Enter your Phone Number</label>
+                      <label htmlFor="exampleInputPhone">
+                        Enter your Phone Number
+                      </label>
                       <input
                         type="text"
                         className="form-control"
@@ -85,7 +114,9 @@ function Contact() {
                       />
                     </div>
                     <div className="form-group text-dark m-2">
-                      <label htmlFor="exampleFormControlReason">Enter your Reason for Contacting us</label>
+                      <label htmlFor="exampleFormControlReason">
+                        Enter your Reason for Contacting us
+                      </label>
                       <textarea
                         className="form-control"
                         id="exampleFormControlReason"
@@ -103,11 +134,25 @@ function Contact() {
                     </div>
                   </form>
                 </div>
-                <div className="col-12 col-lg-4 text-dark ">
-                  <div className="contact-info">
-                    <p><FontAwesomeIcon icon={faMapMarkerAlt} /> 1234 Maple Street Everett, WA 98201</p>
-                    <p><FontAwesomeIcon icon={faPhone} /> 425-333-4353</p>
-                    <p><FontAwesomeIcon icon={faEnvelope} /> email.com</p>
+
+                <div className="col-12 col-lg-4 text-dark mt-4 mt-lg-0">
+                  <div
+                    className="contact-info text-left"
+                    style={{ fontSize: "1.20rem" }}
+                  >
+                    {" "}
+                    {/* Increased font size */}
+                    <p>
+                      <FontAwesomeIcon icon={faMapMarkerAlt} /> 1234 Maple
+                      Street Everett, WA 98201
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faPhone} /> 425-333-4353
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faEnvelope} />{" "}
+                      InspirationsGenerations@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
@@ -115,7 +160,8 @@ function Contact() {
           </div>
         </div>
       </div>
-     <Footer/>
+
+      <Footer />
     </>
   );
 }
