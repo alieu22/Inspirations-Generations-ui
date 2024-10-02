@@ -1,5 +1,3 @@
-import React from "react";
-
 const textstyle = {
   position: 'absolute',
   left: '15px',

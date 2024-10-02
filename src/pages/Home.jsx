@@ -1,4 +1,3 @@
-import { Navbar } from "react-bootstrap";
 import Carousel from "./Carousel";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,7 +8,7 @@ function Home() {
         <Carousel></Carousel>
 
         <div className="container">
-            <div className="row mt-5">
+            <div className="row mt-5 img-home">
                 <h1 className="text-center">Mission Statement</h1>
             </div>
 
@@ -32,15 +31,15 @@ function Home() {
 
             <div className="row mt-5 text-center">
                 <div className="col-12 col-md-4 col-lg-4 mb-5">
-                   <img class="img-fluid" src="src/assets/images/wheelchair1-img.jpeg"/>
+                   <img className="img-fluid" src="src/assets/images/wheelchair1-img.jpeg"/>
                 </div>
 
                 <div className="col-12 col-md-4 col-lg-4 mb-5">
-                   <img class="img-fluid" src="src/assets/images/wheelchair2-img.jpeg"/>
+                   <img className="img-fluid" src="src/assets/images/wheelchair2-img.jpeg"/>
                 </div>
 
                 <div className="col-12 col-md-4 col-lg-4">
-                   <img class="img-fluid" src="src/assets/images/medicineimg.jpeg"/>
+                   <img className="img-fluid" src="src/assets/images/medicineimg.jpeg"/>
                 </div>
             </div>
 

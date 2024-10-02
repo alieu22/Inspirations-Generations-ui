@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
 
-  const pages = ["Home", "About", "Locations", "Contact"];
+  const pages = ["Home", "About", "Services", "Contact"];
 
 
 
@@ -28,7 +28,7 @@ const Footer = () => {
 
               <h6 className="text-uppercase fw-bold mb-4">
 
-                <i className="me-3"></i>inspiration Generations 
+                <i className="me-3"></i>Inspiration Generations 
 
               </h6>
 
@@ -67,31 +67,6 @@ const Footer = () => {
                 </p>
 
               ))}
-
-              <p>
-
-                <NavLink
-
-                  className={({ isActive }) =>
-
-                    isActive
-
-                      ? "nav-link text-warning-700 bg-warning footer-link footer-link-active"
-
-                      : "nav-link text-reset"
-
-                  }
-
-                  to="/login"
-
-                >
-
-                  Login
-
-                </NavLink>
-
-              </p>
-
             </div>
 
             

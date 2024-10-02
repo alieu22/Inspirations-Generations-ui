@@ -13,3 +13,14 @@ margin-top: 110px;
     border-radius: 140px;
 }
 
+.about img {
+    width: 100%;
+}
+
+.img-home {
+    border-top: 2px dotted #a3a3a3;
+    border-bottom: 2px dotted #a3a3a3;
+    color: #333;
+    background: linear-gradient(to bottom, #eaf8fb, #c3e2ec, #93c8e7);
+}
+
