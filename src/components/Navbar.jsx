@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
-  const pages = ['Home', 'About', 'Services', 'Contact'];
+  const pages = ['Home', 'About', 'Services', 'Contact', 'Apply'];
 
   return (
     <nav className="navbar navbar-expand-lg bg-primary text-white">
@@ -11,7 +11,18 @@ function NavBar() {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Link className="navbar-brand" to="/">Inspirations Generations</Link>
+          <Link className="navbar-brand" to="/">
+            <img 
+              className="img-fluid" 
+              src="src/assets/images/Logo.png" 
+              style={{ 
+                width: '50px', // Set a smaller width for the logo
+                height: '50px', // Set a fixed height to ensure it's not too large
+                borderRadius: '50%' // Keep the round shape
+              }} 
+              alt="Logo"
+            />
+          </Link>
         </div>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -26,7 +37,6 @@ function NavBar() {
               </li>
             ))}
           </ul>
-         
         </div>
 
       </div>

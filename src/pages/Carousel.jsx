@@ -50,7 +50,7 @@ const Carousel = () => {
             alt="Wild Landscape"
           />
           <div className="carousel-caption d-none d-md-block">
-            <h2>Inspirations Generations</h2>
+            <h2>Inspirational Generations</h2>
             <h3 className="text-warning">
               Providing clients with the best experience!
             </h3>

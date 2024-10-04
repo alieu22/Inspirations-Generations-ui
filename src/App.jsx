@@ -7,6 +7,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import NotFoundPage from './pages/NotFoundPage';
+import Apply from './pages/Apply';
 
 function App() {
 
@@ -29,6 +30,11 @@ function App() {
   {
     path : '/contact',
     element : <Contact/>
+  },
+
+  {
+    path : '/apply',
+    element : <Apply/>
   },
 
 ]);
